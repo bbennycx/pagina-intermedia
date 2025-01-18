@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Intermedia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .popup {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border-radius: 10px;
+        }
+        .popup h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .popup p {
+            margin-bottom: 1.5rem;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .accept {
+            background-color: #4caf50;
+            color: white;
+        }
+        .reject {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <h1>Conferma di accesso</h1>
+        <p>Le cose che andrai a leggere sono strettamente personali e, come sai, esprimerle mi mette in grandissimo imbarazzo.<br>
+        Procedendo, <em>accetti di non menzionare MAI e dico MAI nelle nostre future conversazioni le cose che ti ho scritto in questo ringraziamento</em>.</p>
+        <div class="buttons">
+            <button class="accept" onclick="redirectToSite()">Accetto</button>
+            <button class="reject" onclick="closePopup()">Rifiuto</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToSite() {
+            // Cambia l'URL con il sito desiderato
+            window.location.href = "https://prlvlnote.com/mFGr0ld8#I1y253w1";
+        }
+
+        function closePopup() {
+            alert("Hai scelto di non rispettare i miei voleri, coglione.");
+        }
+    </script>
+</body>
+</html>
